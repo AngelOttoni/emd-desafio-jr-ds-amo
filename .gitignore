@@ -1,2 +1,3 @@
 .my_env
 .gcp_credentials
+scripts/__pycache__
