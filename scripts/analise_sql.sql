@@ -72,7 +72,7 @@ WHERE
     AND b.id_bairro IS NULL;
 
 /*
-Resposta: Existem 50 chamados abertos que não foi associado a um bairro ou 
+Resposta: Existem 73 chamados abertos que não foi associado a um bairro ou 
 subprefeitura na tabela de bairros.
 */
 
@@ -148,9 +148,11 @@ ORDER BY
 LIMIT 1;
 
 -- Resposta: O evento com a maior média diária de chamados abertos foi no Rock in Rio com média de 119.14.
-
--- 10. Compare as médias diárias de chamados abertos desse subtipo durante os eventos específicos 
--- (Reveillon, Carnaval e Rock in Rio) e a média diária de chamados abertos desse subtipo considerando todo o período de 01/01/2022 até 31/12/2023.
+/*
+10. Compare as médias diárias de chamados abertos desse subtipo durante os eventos específicos 
+(Reveillon, Carnaval e Rock in Rio) e a média diária de chamados abertos desse subtipo 
+considerando todo o período de 01/01/2022 até 31/12/2023.
+*/
 WITH total_chamados AS (
     SELECT 
         COUNT(*) AS total_chamados,
