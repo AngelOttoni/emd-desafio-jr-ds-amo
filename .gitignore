@@ -1,3 +1,9 @@
 .my_env
 .gcp_credentials
 scripts/__pycache__
+data/
+
+# TO-DO:
+# Review this idea
+scripts/query_for_analysis.sql
+scripts/load_and_save_bigquery_data.py
